@@ -4,7 +4,7 @@
 
 #include "Bai6.h"
 
-void OutputComplex(Complex a) {
+void sophuc::OutputComplex(Complex a) {
     if (a.Re != 0) cout << a.Re;
     if (a.Im != 0) {
         if (a.Im == -1) cout << "-i";
@@ -26,40 +26,47 @@ float Modulus(Complex a) {
     return sqrt(a.Re * a.Re + a.Im * a.Im);
 }
 
-_Resetiosflags Add(Complex a, Complex b) {
+Complex sophuc::Add(Complex a, Complex b) {
     Complex c;
     c.Re = a.Re + b.Re;
     c.Im = a.Im + b.Im;
     return c;
 }
 
-Complex Sub(Complex a, Complex b) {
+Complex sophuc::Sub(Complex a, Complex b) {
     Complex c;
     c.Re = a.Re - b.Re;
     c.Im = a.Im - b.Im;
     return c;
 }
 
-_Resetiosflags Mul(Complex a, Complex b) {
+Complex sophuc::Mul(Complex a, Complex b) {
     Complex c;
     c.Re = a.Re * b.Re - a.Im * b.Im;
     c.Im = a.Re * b.Im + a.Im * b.Re;
     return c;
 }
 
-_Resetiosflags Div(Complex a, Complex b) {
-    Complex c = Mul(a, Conjg(b));
+float sophuc::Modulus(Complex) {
+    return 0;
+}
+
+Complex sophuc::Div(Complex a, Complex b) {
+    Complex Conjgb;
+    Conjgb.Re = b.Re;
+    Conjgb.Im = -b.Im;
+    Complex c = Mul(a, Conjgb);
     float d = b.Re * b.Re + b.Im * b.Im;
     c.Re /= d;
     c.Im /= d;
     return c;
 }
 
-Complex Square(Complex a) {
+Complex sophuc::Square(Complex a) {
     return Mul(a, a);
 }
 
-Complex SquareRoot(Complex a) {
+Complex sophuc::SquareRoot(Complex a, Complex complex) {
     Complex c;
     float delta = Modulus(a);
     if ((a.Re + delta) / 2 >= 0)
@@ -68,6 +75,10 @@ Complex SquareRoot(Complex a) {
         c.Re = sqrt((a.Re - delta) / 2);
     c.Im = a.Im / c.Re / 2;
     return c;
+}
+
+Complex sophuc::SquareRoot(Complex) {
+    return Complex();
 }
 
 int menu6(int &m6) {
@@ -85,7 +96,7 @@ int menu6(int &m6) {
     return m6;
 }
 
-void CASE5() {
+void CASE6() {
     int nMenu6;
     menu6(nMenu6);
     Complex a, b;
@@ -95,23 +106,22 @@ void CASE5() {
     cin >> b.Re >> b.Im;
     switch (nMenu6) {
         case 1: {
-            cout << "Nhap so phuc a: ";
-            cin >> a.Re >> a.Im;
-            cout << "Nhap so phuc b: ";
-            cin >> b.Re >> b.Im;
             cout << "So phuc a,b la: " << a.Re << "+" << a.Im << "i" << " , " << b.Re << "+" << b.Im << "i" << endl;
             break;
         }
         case 2: {
-            cout << "a + b = " << Add(a, b) << endl;
+            cout << "a + b = ";
+            sophuc::OutputComplex(sophuc::Add(a, b));
             break;
         }
         case 3: {
-            cout << "a * b = " << Mul(a, b) << endl;
+            cout << "a * b = ";
+            sophuc::OutputComplex(sophuc::Mul(a, b));
             break;
         }
         case 4: {
-            cout << "a / b = " << Div(a, b) << endl;
+            cout << "a - b = ";
+            sophuc::OutputComplex(sophuc::Div(a, b));
             break;
         }
         case 5: {
@@ -119,7 +129,8 @@ void CASE5() {
             break;
         }
         case 6: {
-            //cout << "P - Q = " << P - Q << endl;
+            cout << "Sqrt(a) = ";
+            sophuc::OutputComplex(sophuc::SquareRoot(a));
             break;
         }
         default: {

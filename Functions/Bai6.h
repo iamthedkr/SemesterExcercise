@@ -15,21 +15,24 @@ struct Complex {
 
 class sophuc {
 public:
-    void OutputComplex(Complex);
 
-    float Modulus(Complex);
+    static float Modulus(Complex);
 
-    Complex Add(Complex, Complex);
+    static Complex Add(Complex, Complex);
 
-    Complex Sub(Complex, Complex);
+    static Complex Sub(Complex, Complex);
 
-    Complex Mul(Complex, Complex);
+    static Complex Mul(Complex, Complex);
 
-    Complex Div(Complex, Complex);
+    static Complex Div(Complex, Complex);
 
-    Complex Square(Complex);
+    static Complex Square(Complex);
 
-    Complex SquareRoot(Complex);
+    static Complex SquareRoot(Complex);
+
+    static void OutputComplex(Complex);
+
+    static Complex SquareRoot(Complex, Complex);
 };
 
 void CASE6();
