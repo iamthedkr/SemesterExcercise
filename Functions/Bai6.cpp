@@ -120,7 +120,7 @@ void CASE6() {
             break;
         }
         case 4: {
-            cout << "a - b = ";
+            cout << "a / b = ";
             sophuc::OutputComplex(sophuc::Div(a, b));
             break;
         }
