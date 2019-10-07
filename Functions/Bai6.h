@@ -32,7 +32,6 @@ public:
 
     static void OutputComplex(Complex);
 
-    static Complex SquareRoot(Complex, Complex);
 };
 
 void CASE6();

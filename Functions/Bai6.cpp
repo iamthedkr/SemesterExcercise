@@ -66,7 +66,7 @@ Complex sophuc::Square(Complex a) {
     return Mul(a, a);
 }
 
-Complex sophuc::SquareRoot(Complex a, Complex complex) {
+Complex sophuc::SquareRoot(Complex a) {
     Complex c;
     float delta = Modulus(a);
     if ((a.Re + delta) / 2 >= 0)
@@ -75,10 +75,6 @@ Complex sophuc::SquareRoot(Complex a, Complex complex) {
         c.Re = sqrt((a.Re - delta) / 2);
     c.Im = a.Im / c.Re / 2;
     return c;
-}
-
-Complex sophuc::SquareRoot(Complex) {
-    return Complex();
 }
 
 int menu6(int &m6) {
@@ -90,7 +86,7 @@ int menu6(int &m6) {
         cout << "\t\t5. Luy thua so phuc." << endl;
         cout << "\t\t6. Can bac hai cua so phuc." << endl;
         cout << "\t\t0. De quay lai." << endl;
-        cout << "------------------MOI BAN CHON------------------" << endl;
+        cout << "\t\t------------------MOI BAN CHON------------------" << endl;
         cin >> m6;
     } while (m6 < 1 && m6 > 6);
     return m6;
