@@ -110,17 +110,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Exercises
+# Target rules for targets named SemesterExcercise
 
 # Build rule for target.
-Exercises: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Exercises
-.PHONY : Exercises
+SemesterExcercise: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 SemesterExcercise
+.PHONY : SemesterExcercise
 
 # fast build rule for target.
-Exercises/fast:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/build
-.PHONY : Exercises/fast
+SemesterExcercise/fast:
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/build
+.PHONY : SemesterExcercise/fast
 
 Functions/Bai1.obj: Functions/Bai1.cpp.obj
 
@@ -128,7 +128,7 @@ Functions/Bai1.obj: Functions/Bai1.cpp.obj
 
 # target to build an object file
 Functions/Bai1.cpp.obj:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai1.cpp.obj
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai1.cpp.obj
 .PHONY : Functions/Bai1.cpp.obj
 
 Functions/Bai1.i: Functions/Bai1.cpp.i
@@ -137,7 +137,7 @@ Functions/Bai1.i: Functions/Bai1.cpp.i
 
 # target to preprocess a source file
 Functions/Bai1.cpp.i:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai1.cpp.i
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai1.cpp.i
 .PHONY : Functions/Bai1.cpp.i
 
 Functions/Bai1.s: Functions/Bai1.cpp.s
@@ -146,7 +146,7 @@ Functions/Bai1.s: Functions/Bai1.cpp.s
 
 # target to generate assembly for a file
 Functions/Bai1.cpp.s:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai1.cpp.s
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai1.cpp.s
 .PHONY : Functions/Bai1.cpp.s
 
 Functions/Bai2.obj: Functions/Bai2.cpp.obj
@@ -155,7 +155,7 @@ Functions/Bai2.obj: Functions/Bai2.cpp.obj
 
 # target to build an object file
 Functions/Bai2.cpp.obj:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai2.cpp.obj
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai2.cpp.obj
 .PHONY : Functions/Bai2.cpp.obj
 
 Functions/Bai2.i: Functions/Bai2.cpp.i
@@ -164,7 +164,7 @@ Functions/Bai2.i: Functions/Bai2.cpp.i
 
 # target to preprocess a source file
 Functions/Bai2.cpp.i:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai2.cpp.i
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai2.cpp.i
 .PHONY : Functions/Bai2.cpp.i
 
 Functions/Bai2.s: Functions/Bai2.cpp.s
@@ -173,7 +173,7 @@ Functions/Bai2.s: Functions/Bai2.cpp.s
 
 # target to generate assembly for a file
 Functions/Bai2.cpp.s:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai2.cpp.s
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai2.cpp.s
 .PHONY : Functions/Bai2.cpp.s
 
 Functions/Bai3.obj: Functions/Bai3.cpp.obj
@@ -182,7 +182,7 @@ Functions/Bai3.obj: Functions/Bai3.cpp.obj
 
 # target to build an object file
 Functions/Bai3.cpp.obj:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai3.cpp.obj
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai3.cpp.obj
 .PHONY : Functions/Bai3.cpp.obj
 
 Functions/Bai3.i: Functions/Bai3.cpp.i
@@ -191,7 +191,7 @@ Functions/Bai3.i: Functions/Bai3.cpp.i
 
 # target to preprocess a source file
 Functions/Bai3.cpp.i:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai3.cpp.i
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai3.cpp.i
 .PHONY : Functions/Bai3.cpp.i
 
 Functions/Bai3.s: Functions/Bai3.cpp.s
@@ -200,7 +200,7 @@ Functions/Bai3.s: Functions/Bai3.cpp.s
 
 # target to generate assembly for a file
 Functions/Bai3.cpp.s:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai3.cpp.s
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai3.cpp.s
 .PHONY : Functions/Bai3.cpp.s
 
 Functions/Bai4.obj: Functions/Bai4.cpp.obj
@@ -209,7 +209,7 @@ Functions/Bai4.obj: Functions/Bai4.cpp.obj
 
 # target to build an object file
 Functions/Bai4.cpp.obj:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai4.cpp.obj
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai4.cpp.obj
 .PHONY : Functions/Bai4.cpp.obj
 
 Functions/Bai4.i: Functions/Bai4.cpp.i
@@ -218,7 +218,7 @@ Functions/Bai4.i: Functions/Bai4.cpp.i
 
 # target to preprocess a source file
 Functions/Bai4.cpp.i:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai4.cpp.i
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai4.cpp.i
 .PHONY : Functions/Bai4.cpp.i
 
 Functions/Bai4.s: Functions/Bai4.cpp.s
@@ -227,7 +227,7 @@ Functions/Bai4.s: Functions/Bai4.cpp.s
 
 # target to generate assembly for a file
 Functions/Bai4.cpp.s:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai4.cpp.s
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai4.cpp.s
 .PHONY : Functions/Bai4.cpp.s
 
 Functions/Bai5.obj: Functions/Bai5.cpp.obj
@@ -236,7 +236,7 @@ Functions/Bai5.obj: Functions/Bai5.cpp.obj
 
 # target to build an object file
 Functions/Bai5.cpp.obj:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai5.cpp.obj
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai5.cpp.obj
 .PHONY : Functions/Bai5.cpp.obj
 
 Functions/Bai5.i: Functions/Bai5.cpp.i
@@ -245,7 +245,7 @@ Functions/Bai5.i: Functions/Bai5.cpp.i
 
 # target to preprocess a source file
 Functions/Bai5.cpp.i:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai5.cpp.i
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai5.cpp.i
 .PHONY : Functions/Bai5.cpp.i
 
 Functions/Bai5.s: Functions/Bai5.cpp.s
@@ -254,7 +254,7 @@ Functions/Bai5.s: Functions/Bai5.cpp.s
 
 # target to generate assembly for a file
 Functions/Bai5.cpp.s:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai5.cpp.s
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai5.cpp.s
 .PHONY : Functions/Bai5.cpp.s
 
 Functions/Bai6.obj: Functions/Bai6.cpp.obj
@@ -263,7 +263,7 @@ Functions/Bai6.obj: Functions/Bai6.cpp.obj
 
 # target to build an object file
 Functions/Bai6.cpp.obj:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai6.cpp.obj
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai6.cpp.obj
 .PHONY : Functions/Bai6.cpp.obj
 
 Functions/Bai6.i: Functions/Bai6.cpp.i
@@ -272,7 +272,7 @@ Functions/Bai6.i: Functions/Bai6.cpp.i
 
 # target to preprocess a source file
 Functions/Bai6.cpp.i:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai6.cpp.i
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai6.cpp.i
 .PHONY : Functions/Bai6.cpp.i
 
 Functions/Bai6.s: Functions/Bai6.cpp.s
@@ -281,7 +281,7 @@ Functions/Bai6.s: Functions/Bai6.cpp.s
 
 # target to generate assembly for a file
 Functions/Bai6.cpp.s:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai6.cpp.s
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai6.cpp.s
 .PHONY : Functions/Bai6.cpp.s
 
 Functions/Bai7.obj: Functions/Bai7.cpp.obj
@@ -290,7 +290,7 @@ Functions/Bai7.obj: Functions/Bai7.cpp.obj
 
 # target to build an object file
 Functions/Bai7.cpp.obj:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai7.cpp.obj
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai7.cpp.obj
 .PHONY : Functions/Bai7.cpp.obj
 
 Functions/Bai7.i: Functions/Bai7.cpp.i
@@ -299,7 +299,7 @@ Functions/Bai7.i: Functions/Bai7.cpp.i
 
 # target to preprocess a source file
 Functions/Bai7.cpp.i:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai7.cpp.i
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai7.cpp.i
 .PHONY : Functions/Bai7.cpp.i
 
 Functions/Bai7.s: Functions/Bai7.cpp.s
@@ -308,7 +308,7 @@ Functions/Bai7.s: Functions/Bai7.cpp.s
 
 # target to generate assembly for a file
 Functions/Bai7.cpp.s:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai7.cpp.s
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai7.cpp.s
 .PHONY : Functions/Bai7.cpp.s
 
 Functions/Bai8.obj: Functions/Bai8.cpp.obj
@@ -317,7 +317,7 @@ Functions/Bai8.obj: Functions/Bai8.cpp.obj
 
 # target to build an object file
 Functions/Bai8.cpp.obj:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai8.cpp.obj
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai8.cpp.obj
 .PHONY : Functions/Bai8.cpp.obj
 
 Functions/Bai8.i: Functions/Bai8.cpp.i
@@ -326,7 +326,7 @@ Functions/Bai8.i: Functions/Bai8.cpp.i
 
 # target to preprocess a source file
 Functions/Bai8.cpp.i:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai8.cpp.i
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai8.cpp.i
 .PHONY : Functions/Bai8.cpp.i
 
 Functions/Bai8.s: Functions/Bai8.cpp.s
@@ -335,7 +335,7 @@ Functions/Bai8.s: Functions/Bai8.cpp.s
 
 # target to generate assembly for a file
 Functions/Bai8.cpp.s:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai8.cpp.s
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai8.cpp.s
 .PHONY : Functions/Bai8.cpp.s
 
 Functions/Bai9.obj: Functions/Bai9.cpp.obj
@@ -344,7 +344,7 @@ Functions/Bai9.obj: Functions/Bai9.cpp.obj
 
 # target to build an object file
 Functions/Bai9.cpp.obj:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai9.cpp.obj
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai9.cpp.obj
 .PHONY : Functions/Bai9.cpp.obj
 
 Functions/Bai9.i: Functions/Bai9.cpp.i
@@ -353,7 +353,7 @@ Functions/Bai9.i: Functions/Bai9.cpp.i
 
 # target to preprocess a source file
 Functions/Bai9.cpp.i:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai9.cpp.i
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai9.cpp.i
 .PHONY : Functions/Bai9.cpp.i
 
 Functions/Bai9.s: Functions/Bai9.cpp.s
@@ -362,7 +362,7 @@ Functions/Bai9.s: Functions/Bai9.cpp.s
 
 # target to generate assembly for a file
 Functions/Bai9.cpp.s:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/Functions/Bai9.cpp.s
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/Functions/Bai9.cpp.s
 .PHONY : Functions/Bai9.cpp.s
 
 main.obj: main.cpp.obj
@@ -371,7 +371,7 @@ main.obj: main.cpp.obj
 
 # target to build an object file
 main.cpp.obj:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/main.cpp.obj
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/main.cpp.obj
 .PHONY : main.cpp.obj
 
 main.i: main.cpp.i
@@ -380,7 +380,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/main.cpp.i
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -389,7 +389,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	$(MAKE) -f CMakeFiles\Exercises.dir\build.make CMakeFiles/Exercises.dir/main.cpp.s
+	$(MAKE) -f CMakeFiles\SemesterExcercise.dir\build.make CMakeFiles/SemesterExcercise.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -398,8 +398,8 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
+	@echo ... SemesterExcercise
 	@echo ... edit_cache
-	@echo ... Exercises
 	@echo ... rebuild_cache
 	@echo ... Functions/Bai1.obj
 	@echo ... Functions/Bai1.i

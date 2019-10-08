@@ -2,20 +2,30 @@
 <project version="4">
   <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
     <generated>
-      <config projectName="Exercises" targetName="Exercises" />
+      <config projectName="SemesterExcercise" targetName="SemesterExcercise" />
     </generated>
   </component>
-  <component name="CMakeSettings" AUTO_RELOAD="true">
+  <component name="CMakeSettings">
     <configurations>
       <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88405bb1-383f-4e99-9264-4dc4463523ed" name="Default Changelist" comment="Bug fixes, working on function 3 and 5.">
+    <list default="true" id="a369bb40-c995-4fe9-a5b4-1efd6205e596" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Exercises.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/DKR.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai3.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai5.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,28 +38,11 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="Khai Trinh" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
-  <component name="ProjectId" id="1RUXo9hgutLdYdPG5FJBT2H8Flq" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="1Rvc0PDFwnGBIkVVo6tdbKqpY0J" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
-  </component>
-  <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\DKR\Desktop\Coding\C++\Exercises\SemesterExcercise\Functions" />
-    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -64,7 +57,7 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="Exercises" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Exercises" TARGET_NAME="Exercises" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Exercises" RUN_TARGET_NAME="Exercises">
+    <configuration name="SemesterExcercise" type="CMakeRunConfiguration" factoryName="Application" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SemesterExcercise" TARGET_NAME="SemesterExcercise" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SemesterExcercise" RUN_TARGET_NAME="SemesterExcercise">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -75,126 +68,13 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="88405bb1-383f-4e99-9264-4dc4463523ed" name="Default Changelist" comment="" />
-      <created>1569722820833</created>
+      <changelist id="a369bb40-c995-4fe9-a5b4-1efd6205e596" name="Default Changelist" comment="" />
+      <created>1570550786336</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1569722820833</updated>
-      <workItem from="1569722823163" duration="122000" />
-      <workItem from="1569901097661" duration="7958000" />
-      <workItem from="1570026438698" duration="3253000" />
-      <workItem from="1570076083564" duration="1546000" />
-      <workItem from="1570152708383" duration="8736000" />
-      <workItem from="1570292170006" duration="724000" />
-      <workItem from="1570328146240" duration="6523000" />
-      <workItem from="1570340538613" duration="285000" />
-      <workItem from="1570340911140" duration="1052000" />
-      <workItem from="1570371067951" duration="2830000" />
-      <workItem from="1570415222656" duration="10613000" />
-<<<<<<< HEAD
-      <workItem from="1570432725445" duration="1467000" />
-      <workItem from="1570434217678" duration="263000" />
-      <workItem from="1570434943200" duration="2476000" />
-=======
-      <workItem from="1570432725445" duration="1121000" />
->>>>>>> parent of 7dd6d55... Adding Other files
+      <updated>1570550786336</updated>
+      <workItem from="1570550789247" duration="36000" />
     </task>
-    <task id="LOCAL-00001" summary="Issue 8 solved, optimize code.">
-      <created>1570332423195</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1570332423195</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Working on Case 2.">
-      <created>1570333906434</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1570333906434</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Update Readme.md">
-      <created>1570341576566</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1570341576566</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Update Readme.md">
-      <created>1570341688494</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1570341688494</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Update Readme.md">
-      <created>1570341739951</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1570341739951</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Switch-case problem solved, moved funtions into \Functions.">
-      <created>1570373784675</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1570373784675</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Working on function 4, bug fixed.">
-      <created>1570421698156</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1570421698156</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Bug fixed, working on function 3 or 5 (I dont know :v)">
-      <created>1570422399725</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1570422399725</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Bug fixed, working on function 3 and 5.">
-      <created>1570425815578</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1570425815578</updated>
-    </task>
-<<<<<<< HEAD
-    <task id="LOCAL-00010" summary="Bug fixes, working on function 3 and 5.">
-      <created>1570433881725</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1570433881725</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Adding Other files">
-      <created>1570434426776</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1570434426776</updated>
-    </task>
-    <task id="LOCAL-00012" summary="Adding Other files">
-      <created>1570436692355</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1570436692355</updated>
-    </task>
-    <task id="LOCAL-00013" summary="Working on Function 6.">
-      <created>1570436898679</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1570436898679</updated>
-    </task>
-    <option name="localTasksCounter" value="14" />
-=======
-    <option name="localTasksCounter" value="10" />
->>>>>>> parent of 7dd6d55... Adding Other files
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,29 +85,10 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Issue 8 solved, optimize code." />
-    <MESSAGE value="Working on Case 2." />
-    <MESSAGE value="Update Readme.md" />
-    <MESSAGE value="Switch-case problem solved, moved funtions into \Functions." />
-    <MESSAGE value="Working on function 4, bug fixed." />
-    <MESSAGE value="Bug fixed, working on function 3 or 5 (I dont know :v)" />
-    <MESSAGE value="Bug fixed, working on function 3 and 5." />
-    <MESSAGE value="Bug fixes, working on function 3 and 5." />
-    <MESSAGE value="Adding Other files" />
-    <MESSAGE value="Working on Function 6." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on Function 6." />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>
