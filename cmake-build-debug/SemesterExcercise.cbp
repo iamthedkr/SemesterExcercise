@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SemesterExcercise"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SemesterExcercise">
+				<Option output="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/SemesterExcercise.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/."/>
+					<Add directory="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions"/>
+					<Add directory="D:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 SemesterExcercise"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SemesterExcercise/fast">
+				<Option output="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/SemesterExcercise.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/."/>
+					<Add directory="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions"/>
+					<Add directory="D:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++"/>
+					<Add directory="D:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="D:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward"/>
+					<Add directory="D:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include"/>
+					<Add directory="D:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed"/>
+					<Add directory="D:/MinGW64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 SemesterExcercise/fast"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="D:/MinGW64/bin/mingw32-make.exe -f &quot;C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai1.cpp">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai1.h">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai2.cpp">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai2.h">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai3.cpp">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai3.h">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai4.cpp">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai4.h">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai5.cpp">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai5.h">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai6.cpp">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai6.h">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai7.cpp">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai7.h">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai8.cpp">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai8.h">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai9.cpp">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/Functions/Bai9.h">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/include.h">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/main.cpp">
+			<Option target="SemesterExcercise"/>
+		</Unit>
+		<Unit filename="C:/Users/DKR/Desktop/Coding/C++/Exercises/SemesterExcercise/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
