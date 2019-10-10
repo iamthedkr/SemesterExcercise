@@ -6,15 +6,24 @@
 #ifndef EXERCISES_BAI1_H
 #define EXERCISES_BAI1_H
 
-void chuyenDoiCoSo(int N, int b);
-void phanTichThuaSoNguyenTo(int N);
-bool laSoNnguyenTo(long long N);
+class SoNguyen {
+public:
+    static void chuyenDoiCoSo(int, int);
 
-int sumOfDivisors(int n);
-long long tongChuSo(long long N);
+    static void phanTichThuaSoNguyenTo(int);
 
-long long timSoDao(long long);
-bool laSoDoiXung(int);
+    static bool laSoNnguyenTo(long long);
+
+    static int sumOfDivisors(int);
+
+    static long long tongChuSo(long long);
+
+    static long long timSoDao(long long);
+
+    static bool laSoDoiXung(long long);
+
+    static bool heCoSobDoiXung(long long, int);
+};
 
 void CASE1();
 int menu1(int &m1);

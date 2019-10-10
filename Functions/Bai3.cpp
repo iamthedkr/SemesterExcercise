@@ -181,7 +181,7 @@ int menu3(int &m3) {
         cout << "\t\t0. De quay lai." << endl;
         cout << "--------------------------------------MOI BAN CHON--------------------------------------" << endl;
         cin >> m3;
-    } while (m3 < 1 && m3 > 8);
+    } while (m3 < 1 || m3 > 8);
     return m3;
 }
 

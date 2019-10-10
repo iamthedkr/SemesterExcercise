@@ -24,13 +24,13 @@ int menu(int &m) {
         cout << "\t\t0. De thoat." << endl;
         cout << "\t\t-------------MOI BAN CHON-------------" << endl;
         cin >> m;
-    } while (m < 1 && m > 9);
+    } while (m < 1 || m > 9);
     return m;
 }
 
 int main(int argc, char const *argv[]) {
-    int nMenu;
-    while (1) {
+    int nMenu(1);
+    while (true) {
         menu(nMenu);
         switch (nMenu) {
             case 0: {
@@ -77,6 +77,5 @@ int main(int argc, char const *argv[]) {
                 cout << "\t\t****************************************" << endl;
             }
         }
-
     }
 }

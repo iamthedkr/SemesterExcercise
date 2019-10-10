@@ -20,7 +20,7 @@ int menu2(int &m2) {
         cout << "0. De quay lai." << endl;
         cout << "--------------------------------------MOI BAN CHON--------------------------------------" << endl;
         cin >> m2;
-    } while (m2 < 1 && m2 > 11);
+    } while (m2 < 1 || m2 > 11);
     return m2;
 }
 

@@ -4,7 +4,7 @@
 #include "Bai1.h"
 
 //Issue 1
-void chuyenDoiCoSo(int N, int b) {
+void SoNguyen::chuyenDoiCoSo(int N, int b) {
     const char x[] = {
             '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
             'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z', 'W'
@@ -28,7 +28,7 @@ void chuyenDoiCoSo(int N, int b) {
 }
 
 //Issue 2 + 3
-bool laSoNnguyenTo(long long N) {
+bool SoNguyen::laSoNnguyenTo(long long N) {
     for (int i = 2; i <= sqrt(N); i++) {
         if (N % i == 0) {
             return 0;
@@ -37,7 +37,7 @@ bool laSoNnguyenTo(long long N) {
     return 1;
 }
 
-void phanTichThuaSoNguyenTo(int N) {
+void SoNguyen::phanTichThuaSoNguyenTo(int N) {
     cout << "Nhap n = ";
     cin >> N;
     int dem;
@@ -59,7 +59,7 @@ void phanTichThuaSoNguyenTo(int N) {
 }
 
 //Issue 4
-int sumOfDivisors(int n) {
+int SoNguyen::sumOfDivisors(int n) {
     int sum = 1;
     div_t temp;
     int nSqrt = (int) sqrt(n);
@@ -76,7 +76,7 @@ int sumOfDivisors(int n) {
 }
 
 //Issue 6
-long long tongChuSo(long long N) {
+long long SoNguyen::tongChuSo(long long N) {
     int nRem, nSum = 0;
     while (N != 0) {
         nRem = N % 10;
@@ -87,7 +87,7 @@ long long tongChuSo(long long N) {
 }
 
 //Issue 7
-long long timSoDao(long long nInput) {
+long long SoNguyen::timSoDao(long long nInput) {
     int nSoDao = 0, nRem;
     while (nInput != 0) {
         nRem = nInput % 10;
@@ -97,12 +97,12 @@ long long timSoDao(long long nInput) {
     return nSoDao;
 }
 
-bool laSoDoiXung(int nInput) {
+bool SoNguyen::laSoDoiXung(long long nInput) {
     return nInput == timSoDao(nInput);
 }
 
 //Issue 8
-bool heCoSobDoiXung(int N, int b) {
+bool SoNguyen::heCoSobDoiXung(long long N, int b) {
     const char x[] = {
             '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
             'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z', 'W'
@@ -492,33 +492,31 @@ int menu1(int &m1) {
         cout << "\t\t7. Duyet cac so thuan nghich co N chu so, co tong cac chu so la S." << endl;
         cout
                 << "\t\t8. Duyet cac so thuan nghich co N chu so sao cho bieu dien so do o he co so b cung la so thuan nghich."
-             << endl;
+                << endl;
         cout << "\t\t9. Xay dung phep cong, tru, nhan, chia giua hai so lon (512 chu so)." << endl;
         cout << "\t\t10. Tim so nguyen to lon (512 chu so)." << endl;
         cout
                 << "\t\t11 Dua ra 5 thuat toan tim so nguyen to khac nhau, so sanh do phuc tap tinh toan cua cac thuat toan."
-             << endl;
+                << endl;
         cout << "\t\t0. De quay lai." << endl;
         cout << "\t\t--------------------------------------MOI BAN CHON--------------------------------------" << endl;
         cin >> m1;
-    } while (m1 < 1 && m1 > 11);
+    } while (m1 < 1 || m1 > 11);
     return m1;
 }
 
 void CASE1() {
     int nMenu1, nInput(0);
+    SoNguyen A;
     menu1(nMenu1);
     switch (nMenu1) {
-        //case 0: {
-        //    return 0;
-        //}
         case 1: {
             int b(0);
-            chuyenDoiCoSo(nInput, b);
+            A.chuyenDoiCoSo(nInput, b);
             break;
         }
         case 2: {
-            phanTichThuaSoNguyenTo(nInput);
+            A.phanTichThuaSoNguyenTo(nInput);
             break;
         }
         case 3: {
@@ -526,7 +524,7 @@ void CASE1() {
             cin >> nInput;
             long long L = pow(10, nInput - 1) + 1, H = pow(10, nInput);
             for (long long k = L; k <= H; k += 2) {
-                if (laSoNnguyenTo(k)) {
+                if (A.laSoNnguyenTo(k)) {
                     cout << k << " ";
                 }
             }
@@ -537,8 +535,8 @@ void CASE1() {
             cout << "Nhap N: ";
             cin >> nInput;
             for (int i = 2; i < nInput; i++) {
-                int s = sumOfDivisors(i);
-                if (s > i && sumOfDivisors(s) == i) {
+                int s = A.sumOfDivisors(i);
+                if (s > i && A.sumOfDivisors(s) == i) {
                     cout << "(" << i << "," << s << ")" << " ";
                 }
             }
@@ -550,7 +548,7 @@ void CASE1() {
             cin >> nInput;
             int k = (nInput - 1) / 4;
             for (int i = 0; i <= k; i++) {
-                if (laSoNnguyenTo(i) && laSoNnguyenTo(4 * i + 1)) {
+                if (A.laSoNnguyenTo(i) && A.laSoNnguyenTo(4 * i + 1)) {
                     cout << "(" << i << "," << 4 * i + 1 << ")" << " ";
                 }
             }
@@ -562,7 +560,7 @@ void CASE1() {
             cout << "Enter N and S: ";
             cin >> nInput >> sum;
             for (int i = 0; i < nInput; ++i) {
-                if (tongChuSo(i) == sum && laSoNnguyenTo(i)) {
+                if (A.tongChuSo(i) == sum && A.laSoNnguyenTo(i)) {
                     cout << i << " ";
                 }
             }
@@ -575,7 +573,7 @@ void CASE1() {
             cin >> nInput >> sum;
             long long L = pow(10, nInput - 1) + 1, H = pow(10, nInput);
             for (long long k = L; k <= H; k += 2) {
-                if (laSoNnguyenTo(k) && laSoDoiXung(k) && (tongChuSo(k) == sum)) {
+                if (A.laSoNnguyenTo(k) && A.laSoDoiXung(k) && (A.tongChuSo(k) == sum)) {
                     cout << k << " ";
                 }
             }
@@ -588,7 +586,7 @@ void CASE1() {
             cin >> nInput >> b;
             long long L = pow(10, nInput - 1) + 1, H = pow(10, nInput);
             for (long long k = L; k <= H; k += 2) {
-                if (laSoDoiXung(k) && heCoSobDoiXung(k, b)) {
+                if (A.laSoDoiXung(k) && A.heCoSobDoiXung(k, b)) {
                     cout << k << " ";
                 }
             }

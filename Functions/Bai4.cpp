@@ -255,7 +255,7 @@ int menu4(int &m4) {
         cout << "\t\t0. De quay lai." << endl;
         cout << "--------------------------------------MOI BAN CHON--------------------------------------" << endl;
         cin >> m4;
-    } while (m4 < 1 && m4 > 9);
+    } while (m4 < 1 || m4 > 9);
     return m4;
 }
 
@@ -267,7 +267,7 @@ void CASE4() {
     SquareMatrix A(file);
     int i, j, size = A.getSize();
 
-    double *v = new double[size];
+    auto *v = new double[size];
     for (i = 0; i < size; i++)
         file >> v[i];
 

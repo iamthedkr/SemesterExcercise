@@ -12,20 +12,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a369bb40-c995-4fe9-a5b4-1efd6205e596" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Exercises.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/DKR.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai1.h" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai2.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai4.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai4.h" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai4.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai5.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai6.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai6.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai6.h" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai6.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +40,9 @@
   </component>
   <component name="ProjectId" id="1Rvc0PDFwnGBIkVVo6tdbKqpY0J" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -74,7 +74,17 @@
       <option name="presentableId" value="Default" />
       <updated>1570550786336</updated>
       <workItem from="1570550789247" duration="36000" />
+      <workItem from="1570550863515" duration="143000" />
+      <workItem from="1570727750712" duration="4654000" />
     </task>
+    <task id="LOCAL-00001" summary="Fixed workspace.xml error.">
+      <created>1570550906132</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570550906132</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -85,10 +95,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Fixed workspace.xml error." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed workspace.xml error." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
 </project>

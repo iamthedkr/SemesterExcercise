@@ -12,9 +12,9 @@ class SquareMatrix {
     int size;
 
 public:
-    SquareMatrix(int);
+    explicit SquareMatrix(int);
 
-    SquareMatrix(istream &);
+    explicit SquareMatrix(istream &);
 
     SquareMatrix(const SquareMatrix &);
 

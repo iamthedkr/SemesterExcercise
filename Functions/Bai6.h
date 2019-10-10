@@ -8,31 +8,27 @@
 
 #pragma once
 
-struct Complex {
-    float Re; //phần thực - real
-    float Im; //phần ảo - imaginary
-};
+typedef struct tagcomplex {
+    float thuc, ao;
+} Complex;
 
-class sophuc {
-public:
+Complex Add(Complex, Complex);
 
-    static float Modulus(Complex);
+Complex Sub(Complex, Complex);
 
-    static Complex Add(Complex, Complex);
+Complex Mul(Complex, Complex);
 
-    static Complex Sub(Complex, Complex);
+Complex Div(Complex, Complex);
 
-    static Complex Mul(Complex, Complex);
+Complex Pow(Complex);
 
-    static Complex Div(Complex, Complex);
+float Modulus(Complex);
 
-    static Complex Square(Complex);
+Complex SquareRoot(Complex);
 
-    static Complex SquareRoot(Complex);
+void inputComplex(Complex &, Complex &);
 
-    static void OutputComplex(Complex);
-
-};
+void outputComplex(Complex);
 
 void CASE6();
 

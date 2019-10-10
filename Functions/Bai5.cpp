@@ -223,7 +223,7 @@ int menu5(int &m5) {
         cout << "\t\t0. De quay lai." << endl;
         cout << "--------------------------------------MOI BAN CHON--------------------------------------" << endl;
         cin >> m5;
-    } while (m5 < 1 && m5 > 8);
+    } while (m5 < 1 || m5 > 8);
     return m5;
 }
 
