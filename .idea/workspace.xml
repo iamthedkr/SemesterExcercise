@@ -13,14 +13,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a369bb40-c995-4fe9-a5b4-1efd6205e596" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai1.h" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai1.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai5.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai5.h" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai5.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai6.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai6.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai6.h" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai6.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SemesterExcercise.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SemesterExcercise.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/matrix.txt" beforeDir="false" afterPath="$PROJECT_DIR$/matrix.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +64,7 @@
       <updated>1570550786336</updated>
       <workItem from="1570550789247" duration="36000" />
       <workItem from="1570550863515" duration="143000" />
-      <workItem from="1570727750712" duration="6109000" />
+      <workItem from="1570727750712" duration="6271000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed workspace.xml error.">
       <created>1570550906132</created>
@@ -88,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570732616824</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Function 6 now OOP, bug fixes.">
+      <created>1570733921244</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1570733921244</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,7 +109,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixed workspace.xml error." />
     <MESSAGE value="Function 6 done, function 1 now OOP, bug fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Function 6 done, function 1 now OOP, bug fixes." />
+    <MESSAGE value="Function 6 now OOP, bug fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Function 6 now OOP, bug fixes." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
