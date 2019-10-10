@@ -6,7 +6,7 @@
 #ifndef EXERCISES_BAI1_H
 #define EXERCISES_BAI1_H
 
-class SoNguyen {
+class SONGUYEN {
 public:
     static void chuyenDoiCoSo(int, int);
 

@@ -4,7 +4,7 @@
 #include "Bai1.h"
 
 //Issue 1
-void SoNguyen::chuyenDoiCoSo(int N, int b) {
+void SONGUYEN::chuyenDoiCoSo(int N, int b) {
     const char x[] = {
             '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
             'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z', 'W'
@@ -28,7 +28,7 @@ void SoNguyen::chuyenDoiCoSo(int N, int b) {
 }
 
 //Issue 2 + 3
-bool SoNguyen::laSoNnguyenTo(long long N) {
+bool SONGUYEN::laSoNnguyenTo(long long N) {
     for (int i = 2; i <= sqrt(N); i++) {
         if (N % i == 0) {
             return 0;
@@ -37,7 +37,7 @@ bool SoNguyen::laSoNnguyenTo(long long N) {
     return 1;
 }
 
-void SoNguyen::phanTichThuaSoNguyenTo(int N) {
+void SONGUYEN::phanTichThuaSoNguyenTo(int N) {
     cout << "Nhap n = ";
     cin >> N;
     int dem;
@@ -59,7 +59,7 @@ void SoNguyen::phanTichThuaSoNguyenTo(int N) {
 }
 
 //Issue 4
-int SoNguyen::sumOfDivisors(int n) {
+int SONGUYEN::sumOfDivisors(int n) {
     int sum = 1;
     div_t temp;
     int nSqrt = (int) sqrt(n);
@@ -76,7 +76,7 @@ int SoNguyen::sumOfDivisors(int n) {
 }
 
 //Issue 6
-long long SoNguyen::tongChuSo(long long N) {
+long long SONGUYEN::tongChuSo(long long N) {
     int nRem, nSum = 0;
     while (N != 0) {
         nRem = N % 10;
@@ -87,7 +87,7 @@ long long SoNguyen::tongChuSo(long long N) {
 }
 
 //Issue 7
-long long SoNguyen::timSoDao(long long nInput) {
+long long SONGUYEN::timSoDao(long long nInput) {
     int nSoDao = 0, nRem;
     while (nInput != 0) {
         nRem = nInput % 10;
@@ -97,12 +97,12 @@ long long SoNguyen::timSoDao(long long nInput) {
     return nSoDao;
 }
 
-bool SoNguyen::laSoDoiXung(long long nInput) {
+bool SONGUYEN::laSoDoiXung(long long nInput) {
     return nInput == timSoDao(nInput);
 }
 
 //Issue 8
-bool SoNguyen::heCoSobDoiXung(long long N, int b) {
+bool SONGUYEN::heCoSobDoiXung(long long N, int b) {
     const char x[] = {
             '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
             'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z', 'W'
@@ -507,7 +507,7 @@ int menu1(int &m1) {
 
 void CASE1() {
     int nMenu1, nInput(0);
-    SoNguyen A;
+    SONGUYEN A;
     menu1(nMenu1);
     switch (nMenu1) {
         case 1: {

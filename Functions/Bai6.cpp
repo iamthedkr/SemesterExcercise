@@ -4,28 +4,28 @@
 
 #include "Bai6.h"
 
-Complex Add(Complex a, Complex b) {
+Complex SOPHUC::Add(Complex a, Complex b) {
     Complex c;
     c.thuc = a.thuc + b.thuc;
     c.ao = a.ao + b.ao;
     return c;
 }
 
-Complex Sub(Complex a, Complex b) {
+Complex SOPHUC::Sub(Complex a, Complex b) {
     Complex c;
     c.thuc = a.thuc - b.thuc;
     c.ao = a.ao - b.ao;
     return c;
 }
 
-Complex Mul(Complex a, Complex b) {
+Complex SOPHUC::Mul(Complex a, Complex b) {
     Complex c;
     c.thuc = a.thuc * b.thuc - a.ao * b.ao;
     c.ao = a.thuc * b.ao + a.ao * b.thuc;
     return c;
 }
 
-Complex Pow(Complex a) {
+Complex SOPHUC::Pow(Complex a) {
     Complex c;
     int mu;
     c.thuc = a.thuc, c.ao = a.ao;
@@ -42,7 +42,7 @@ Complex Pow(Complex a) {
     return c;
 }
 
-Complex Div(Complex a, Complex b) {
+Complex SOPHUC::Div(Complex a, Complex b) {
     Complex c;
     float tongbp = b.thuc * b.thuc + b.ao * b.ao;
     c.thuc = (a.thuc * a.ao + b.thuc * b.ao) / tongbp;
@@ -51,11 +51,11 @@ Complex Div(Complex a, Complex b) {
 }
 
 
-float Modulus(Complex a) {
+float SOPHUC::Modulus(Complex a) {
     return sqrt(a.thuc * a.ao + a.thuc * a.ao);
 }
 
-Complex SquareRoot(Complex a) {
+Complex SOPHUC::SquareRoot(Complex a) {
     Complex c;
     float delta = Modulus(a);
     if ((a.thuc + delta) / 2 >= 0)
@@ -66,14 +66,14 @@ Complex SquareRoot(Complex a) {
     return c;
 }
 
-void inputComplex(Complex &a, Complex &b) {
+void SOPHUC::inputComplex(Complex &a, Complex &b) {
     cout << "Nhap so phuc a: ";
     cin >> a.thuc >> a.ao;
     cout << "Nhap so phuc b: ";
     cin >> b.thuc >> b.ao;
 }
 
-void outputComplex(Complex a) {
+void SOPHUC::outputComplex(Complex a) {
     cout << a.thuc << " + " << a.ao << "i";
 }
 
@@ -96,29 +96,30 @@ void CASE6() {
     int nMenu6;
     menu6(nMenu6);
     Complex a = Complex(), b = Complex();
+    SOPHUC Comp;
     switch (nMenu6) {
         case 1: {
-            inputComplex(a, b);
+            Comp.inputComplex(a, b);
             cout << "So phuc a va b la: " << endl;
-            outputComplex(a);
+            Comp.outputComplex(a);
             cout << endl;
-            outputComplex(b);
+            Comp.outputComplex(b);
             break;
         }
         case 2: {
-            inputComplex(a, b);
+            Comp.inputComplex(a, b);
             cout << "Ban muon tinh tong hay hieu?   1:Tong , 0:Hieu" << endl;
             int tongHieu;
             cin >> tongHieu;
             switch (tongHieu) {
                 case 1: {
                     cout << "a + b = ";
-                    outputComplex(Add(a, b));
+                    Comp.outputComplex(Comp.Add(a, b));
                     break;
                 }
                 case 2: {
                     cout << "a - b = ";
-                    outputComplex(Sub(a, b));
+                    Comp.outputComplex(Comp.Sub(a, b));
                     break;
                 }
             }
@@ -127,27 +128,27 @@ void CASE6() {
             break;
         }
         case 3: {
-            inputComplex(a, b);
+            Comp.inputComplex(a, b);
             cout << "a * b = ";
-            outputComplex(Mul(a, b));
+            Comp.outputComplex(Comp.Mul(a, b));
             break;
         }
         case 4: {
-            inputComplex(a, b);
+            Comp.inputComplex(a, b);
             cout << "a / b = ";
-            outputComplex(Div(a, b));
+            Comp.outputComplex(Comp.Div(a, b));
             break;
         }
         case 5: {
-            inputComplex(a, b);
+            Comp.inputComplex(a, b);
             cout << " A^x = ";
-            outputComplex(Pow(a));
+            Comp.outputComplex(Comp.Pow(a));
             break;
         }
         case 6: {
-            inputComplex(a, b);
+            Comp.inputComplex(a, b);
             cout << "Sqrt(a) = ";
-            outputComplex(SquareRoot(a));
+            Comp.outputComplex(Comp.SquareRoot(a));
             break;
         }
         default: {

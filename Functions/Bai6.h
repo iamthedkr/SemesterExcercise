@@ -12,23 +12,27 @@ typedef struct tagcomplex {
     float thuc, ao;
 } Complex;
 
-Complex Add(Complex, Complex);
+class SOPHUC {
+public:
 
-Complex Sub(Complex, Complex);
+    static Complex Add(Complex, Complex);
 
-Complex Mul(Complex, Complex);
+    static Complex Sub(Complex, Complex);
 
-Complex Div(Complex, Complex);
+    static Complex Mul(Complex, Complex);
 
-Complex Pow(Complex);
+    static Complex Div(Complex, Complex);
 
-float Modulus(Complex);
+    static Complex Pow(Complex);
 
-Complex SquareRoot(Complex);
+    static float Modulus(Complex);
 
-void inputComplex(Complex &, Complex &);
+    static Complex SquareRoot(Complex);
 
-void outputComplex(Complex);
+    static void inputComplex(Complex &, Complex &);
+
+    static void outputComplex(Complex);
+};
 
 void CASE6();
 

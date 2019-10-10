@@ -4,11 +4,11 @@
 #include "Bai5.h"
 
 DaThuc::DaThuc() {
-    donthuc = NULL;
+    donthuc = nullptr;
 }
 
 DaThuc::DaThuc(const DaThuc &d) {
-    donthuc = NULL;
+    donthuc = nullptr;
     pointer p = d.donthuc;
     while (p) {
         add(p->heso, p->somu);
@@ -18,7 +18,7 @@ DaThuc::DaThuc(const DaThuc &d) {
 
 const DaThuc &DaThuc::operator=(const DaThuc &d) {
     delete donthuc;
-    donthuc = NULL;
+    donthuc = nullptr;
     pointer p = d.donthuc;
     while (p) {
         add(p->heso, p->somu);
@@ -38,18 +38,18 @@ void DaThuc::add(float x, int n) {
             } else {
                 donthuc = p->next;
             }
-            p->next = NULL;
+            p->next = nullptr;
             delete p;
         }
     } else {
         q = new node(x, n);
         p = donthuc;
-        r = NULL;
+        r = nullptr;
         while (p && n < p->somu) {
             r = p;
             p = p->next;
         }
-        if (r == NULL)
+        if (r == nullptr)
             donthuc = q;
         else r->next = q;
         q->next = p;
@@ -57,22 +57,22 @@ void DaThuc::add(float x, int n) {
 }
 
 DaThuc::DaThuc(const char *conststr) {
-    donthuc = NULL;
+    donthuc = nullptr;
     char *str = new char[strlen(conststr) + 1];
     strcpy(str, conststr);
     char *pch;
     pch = strtok(str, "+ ");
-    while (pch != NULL) {
+    while (pch != nullptr) {
         float x;
         int n;
-        sscanf(pch, "%fx^%d", &x, &n);
+        scanf(pch, "%fx^%d", &x, &n);
         add(x, n);
-        pch = strtok(NULL, "+ ");
+        pch = strtok(nullptr, "+ ");
     }
 }
 
 int DaThuc::getDegree() const {
-    if (donthuc == NULL) return 0;
+    if (donthuc == nullptr) return 0;
     return donthuc->somu;
 }
 
@@ -81,7 +81,7 @@ float DaThuc::getMaxExponent() const {
 }
 
 bool DaThuc::bang0() const {
-    return donthuc == NULL;
+    return donthuc == nullptr;
 }
 
 DaThuc DaThuc::daoham() const {
@@ -199,7 +199,7 @@ DaThuc DaThuc::operator%(const DaThuc &d) const {
 
 ostream &operator<<(ostream &out, const DaThuc &d) {
     DaThuc::pointer p = d.donthuc;
-    if (p == NULL) return out << "0";
+    if (p == nullptr) return out << "0";
     cout << p->heso << "x^" << p->somu;
     p = p->next;
     while (p) {

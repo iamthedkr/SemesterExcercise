@@ -15,7 +15,7 @@ class DaThuc {
         node(float x, int n) {
             heso = x;
             somu = n;
-            next = NULL;
+            next = nullptr;
         }
 
         ~node() {
@@ -34,13 +34,13 @@ class DaThuc {
             *before = p;
             p = p->next;
         }
-        return NULL;
+        return nullptr;
     }
 
 public:
     DaThuc();
 
-    DaThuc(const char *);
+    explicit DaThuc(const char *);
 
     DaThuc(const DaThuc &);
 
