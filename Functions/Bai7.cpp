@@ -4,8 +4,6 @@
 
 #include "Bai7.h"
 
-ListSach a;
-
 void ThemSach(ListSach a, int &n) {
     n++;
     cout << "\n                         THEM MOT DAU SACH MOI VAO THU VIEN \n";
@@ -17,11 +15,11 @@ void ThemSach(ListSach a, int &n) {
         cout << "Ma Sach Da Co , Vui Long Nhap Lai \n";
         goto nhaplaimasach;
     }
-    cout << "Nhap Ten Sach: ";
+    cout << "Nhap ten sach: ";
     cin.ignore();
     cin.getline(a[n].Name, 100);
     //  gets(a[n].Name);
-    cout << "Nhap ten the loai: ";
+    cout << "Nhap the loai: ";
     gets(a[n].Title);
     cout << "Nhap ten tac gia: ";
     gets(a[n].Author);
@@ -45,8 +43,8 @@ void InToanBoSach(ListSach a, int n) {
     cout << "\n  Ma Sach                          Ten Sach                            The Loai";
     cout << "\n  -----------------------------------------------------------------------------";
     for (int i = 1; i <= n; i++)
-        cout << "\n  º" << a[i].ID << setw(8 - strlen(a[i].ID) + 1) << "³" << a[i].Name
-             << setw(40 - strlen(a[i].Name) + 1) << "³" << a[i].Title << setw(13 - strlen(a[i].Title) + 1);
+        cout << "\n  " << a[i].ID << setw(8 - strlen(a[i].ID) + 1) << " " << a[i].Name
+             << setw(40 - strlen(a[i].Name) + 1) << " " << a[i].Title << setw(13 - strlen(a[i].Title) + 1);
     cout << "\n  -----------------------------------------------------------------------------";
 }
 
@@ -78,41 +76,14 @@ void TimSachTheLoai(ListSach a, int n) {
     cout << "\n  ----------------------------------------------------------------------------";
     for (int i = 1; i <= n; i++) {
         if (strcmp(a[i].Title, tentheloai) == 0) {
-            cout << "\n  º" << a[i].ID << setw(8 - strlen(a[i].ID) + 1) << "³" << a[i].Name
-                 << setw(53 - strlen(a[i].Name) + 1) << "³";
+            cout << "\n" << a[i].ID << setw(8 - strlen(a[i].ID) + 1) << " " << a[i].Name
+                 << setw(53 - strlen(a[i].Name) + 1) << " ";
             dem++;
         }
     }
     cout << "\n  ----------------------------------------------------------------------------";
     if (dem == 0)
         cout << "\n \n KO TIM THAY THE LOAI SACH MA BAN NHAP VAO \n";
-}
-
-void GhiDuLieu(ListSach a, int n) {
-    FILE *f;
-    f = fopen("DATA.DAT", "wb");
-    fwrite(&n, sizeof(int), 1, f);
-    for (int i = 1; i <= n; i++)
-        fwrite(&a[i], sizeof(Sach), 1, f);
-    fclose(f);
-    cout << "\n GHI DU LIEU VAO FILE THANH CONG \n";
-}
-
-//==================================== HAM DOC DU LIEU TU FILE VAO DANH SACH ======================
-void DocDuLieu(ListSach &a, int &n) {
-    FILE *f;
-    Sach g{};
-    f = fopen("DATA.DAT", "rb");
-    if (f == nullptr)
-        cout << "\n                FILE DU LIEU KHONG TON TAI VUI LONG TAO MOI DANH SACH \n \n \n";
-    else {
-        fread(&n, sizeof(int), 1, f);
-        for (int i = 1; i <= n; i++) {
-            fread(&g, sizeof(Sach), 1, f);
-            a[i] = g;
-        }
-        fclose(f);
-    }
 }
 
 int menu7(int &m7) {
@@ -129,18 +100,20 @@ int menu7(int &m7) {
 }
 
 void CASE7() {
-    int nMenu7;
+    int nMenu7, n = 0;
+    ListSach a;
     menu7(nMenu7);
     switch (nMenu7) {
-        //case 0: {
-        //    return 0;
-        //}
         case 1: {
-
+            ThemSach(a, n);
             break;
         }
         case 2: {
-
+            InToanBoSach(a, n);
+            char ms[8];
+            cout << "Nhap Vao Ma So Sach Can Xem Thong Tin \n ";
+            cin >> ms;
+            InChiTietSach(a, n, ms);
             break;
         }
         case 3: {
@@ -148,7 +121,7 @@ void CASE7() {
             break;
         }
         case 4: {
-
+            TimSachTheLoai(a, n);
             break;
         }
         default: {
