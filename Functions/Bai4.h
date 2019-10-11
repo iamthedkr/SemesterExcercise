@@ -9,7 +9,7 @@
 
 class SquareMatrix {
     double **matrix;
-    int size;
+    int size{};
 
 public:
     explicit SquareMatrix(int);

@@ -33,9 +33,48 @@
 ### III. Xây dựng tập thao tác với đa thức:
 
         - Tạo lập hai đa thức Pn(X), Qm(X).
-        - Tìm Pn(X0), Qm(X0).
+        - Tìm Pn(Xo), Qm(Xo).
         - Tìm đạo hàm cấp L của Pn(x), Qm(x).
-        - Tìm R = P + Q. •Tìm R = P - Q.
-        - Tìm R = P*Q. •Tìm R = P/Q và đa thức dư.
-        - Xây dựng các thao tác cộng, trừ nhân, chia hai số nguyên bằngđa thức
+        - Tìm R = P + Q.
+        - Tìm R = P - Q.
+        - Tìm R = P*Q.
+        - Tìm R = P/Q và đa thức dư.
+        - Xây dựng các thao tác cộng, trừ nhân, chia hai số nguyên bằng đa thức.
+        
+### IV. Xây dựng tập thao tác trên ma trận:
+
+        - Tạo lập ma trận.
+        - Nhân hai ma trận 
+        - Tìm phần tử lớn nhất của ma trận. 
+        - Tìm hạng của ma trận.
+        - Tìm các vector riêng & giá trị riêng.
+        - Tìm chuyển vị của ma trận.
+        - Tìm định thức của  ma trận.
+        - Tìm nghịch đảo của ma trận.
+        - Giải hệ phương trình tuyến tính thuần nhất AX=B.
+        
+### V. Xây dựng tập thao tác với đa thức bằng cấu trúc:
+
+        - Tạo lập hai đa thức Pn(X), Qm(X).
+        - Tìm Pn(Xo), Qm(Xo).
+        - Tìm đạo hàm cấp L của Pn(x), Qm(x).
+        - Tìm R = P + Q.
+        - Tìm R = P - Q.
+        - Tìm R = P*Q.
+        - Tìm R = P/Q và đa thức dư.
+
+### VI. Xây dựng tập thao tác trên số phức bằng cấu trúc:
+
+        - Tạo lập hai số phức.
+        - Cộng hai số phức.
+        - Nhân hai số phức.
+        - Chia hai số phức.
+        - Lũy thừa số phức.
+        - Căn bậc hai của số phức.
+
+### Xây dựng hệ quản lý sách bao gồm những thao tác sau:
+        - Nhập sách.
+        - Hiển thị thông tin về sách.
+        - Sắp xếp theo chủ đề sách.
+        - Tìm kiếm theo chủ đề sách.
 
