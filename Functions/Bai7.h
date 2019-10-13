@@ -16,9 +16,15 @@ struct Sach {
 
 typedef Sach ListSach[50];
 
-int Tim_MSSach(ListSach a, int n, char c[8]);
+void ThemSach(ListSach, int &);
 
-void InChiTietSach(ListSach a, int n, char ms[8]);
+int Tim_MSSach(ListSach, int, char c[8]);
+
+void InToanBoSach(ListSach, int);
+
+void InChiTietSach(ListSach, int, char ms[8]);
+
+void TimSachTheLoai(ListSach, int);
 
 
 class SACH {

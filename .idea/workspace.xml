@@ -14,6 +14,8 @@
     <list default="true" id="a369bb40-c995-4fe9-a5b4-1efd6205e596" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Functions/Bai7.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai7.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai7.h" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai7.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +34,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -54,7 +56,7 @@
     </configuration>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\DKR\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,7 +68,8 @@
       <workItem from="1570550789247" duration="36000" />
       <workItem from="1570550863515" duration="143000" />
       <workItem from="1570727750712" duration="6271000" />
-      <workItem from="1570810953101" duration="4995000" />
+      <workItem from="1570810953101" duration="5111000" />
+      <workItem from="1570986439359" duration="1664000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed workspace.xml error.">
       <created>1570550906132</created>
@@ -96,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570815243405</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Working on function 7.">
+      <created>1570815978044</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1570815978044</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,7 +131,8 @@
     <MESSAGE value="Function 6 now OOP, bug fixes." />
     <MESSAGE value="Working on function 7, bug fixes." />
     <MESSAGE value="Working on function 7, update README.md,  bug fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Working on function 7, update README.md,  bug fixes." />
+    <MESSAGE value="Working on function 7." />
+    <option name="LAST_COMMIT_MESSAGE" value="Working on function 7." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />

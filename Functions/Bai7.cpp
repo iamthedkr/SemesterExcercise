@@ -6,7 +6,7 @@
 
 void ThemSach(ListSach a, int &n) {
     n++;
-    cout << "\n                         THEM MOT DAU SACH MOI VAO THU VIEN \n";
+    cout << "\n                         THEM MOT DAU SACH MOI VAO THU VIEN                  \n";
     cout << "===============================================================================\n";
     nhaplaimasach:
     cout << "Nhap MS :";
@@ -23,7 +23,8 @@ void ThemSach(ListSach a, int &n) {
     gets(a[n].Title);
     cout << "Nhap ten tac gia: ";
     gets(a[n].Author);
-    cout << "\n THEM DAU SACH MOI THANH CONG ";
+    cout << "\n THEM DAU SACH MOI THANH CONG " << endl;
+    cout << "===============================================================================\n";
 }
 
 int Tim_MSSach(ListSach a, int n, char c[8]) {
@@ -43,9 +44,9 @@ void InToanBoSach(ListSach a, int n) {
     cout << "\n  Ma Sach                          Ten Sach                            The Loai";
     cout << "\n  -----------------------------------------------------------------------------";
     for (int i = 1; i <= n; i++)
-        cout << "\n  " << a[i].ID << setw(8 - strlen(a[i].ID) + 1) << " " << a[i].Name
-             << setw(40 - strlen(a[i].Name) + 1) << " " << a[i].Title << setw(13 - strlen(a[i].Title) + 1);
-    cout << "\n  -----------------------------------------------------------------------------";
+        cout << "\n     " << a[i].ID << setw(32 - strlen(a[i].ID) + 1) << " " << a[i].Name
+             << setw(33 - strlen(a[i].Name) + 1) << " " << a[i].Title << setw(13 - strlen(a[i].Title) + 1);
+    cout << "\n  -----------------------------------------------------------------------------\n";
 }
 
 void InChiTietSach(ListSach a, int n, char ms[8]) {
@@ -72,18 +73,44 @@ void TimSachTheLoai(ListSach a, int n) {
     cin.ignore();
     cin.getline(tentheloai, 50);
     cout << "\n  ----------------------------------------------------------------------------";
-    cout << "\n                  Ma Sach                         Ten Sach                    ";
+    cout << "\n                      Ma Sach           |          Ten Sach                    ";
     cout << "\n  ----------------------------------------------------------------------------";
     for (int i = 1; i <= n; i++) {
         if (strcmp(a[i].Title, tentheloai) == 0) {
-            cout << "\n" << a[i].ID << setw(8 - strlen(a[i].ID) + 1) << " " << a[i].Name
-                 << setw(53 - strlen(a[i].Name) + 1) << " ";
+            cout << "\n\t\t\t" << a[i].ID << setw(28 - strlen(a[i].ID) + 1) << " " << a[i].Name
+                 << setw(60 - strlen(a[i].Name) + 1) << " ";
             dem++;
         }
     }
-    cout << "\n  ----------------------------------------------------------------------------";
+    cout << "\n  ----------------------------------------------------------------------------" << endl;
     if (dem == 0)
         cout << "\n \n KO TIM THAY THE LOAI SACH MA BAN NHAP VAO \n";
+}
+
+void GhiDuLieu(ListSach a, int n) {
+    FILE *f;
+    f = fopen("DATA.DAT", "wb");
+    fwrite(&n, sizeof(int), 1, f);
+    for (int i = 1; i <= n; i++)
+        fwrite(&a[i], sizeof(Sach), 1, f);
+    fclose(f);
+    cout << "\n GHI DU LIEU VAO FILE THANH CONG \n";
+}
+
+void DocDuLieu(ListSach &a, int &n) {
+    FILE *f;
+    Sach g{};
+    f = fopen("DATA.DAT", "rb");
+    if (f == nullptr)
+        cout << "\n                FILE DU LIEU KHONG TON TAI VUI LONG TAO MOI DANH SACH \n \n \n";
+    else {
+        fread(&n, sizeof(int), 1, f);
+        for (int i = 1; i <= n; i++) {
+            fread(&g, sizeof(Sach), 1, f);
+            a[i] = g;
+        }
+        fclose(f);
+    }
 }
 
 int menu7(int &m7) {
@@ -92,7 +119,7 @@ int menu7(int &m7) {
         cout << "\t\t2. Hien thi thong tin ve sach." << endl;
         cout << "\t\t3. Sap xep theo chu de sach." << endl;
         cout << "\t\t4. Tim kiem theo chu de sach." << endl;
-        cout << "0. De quay lai." << endl;
+        cout << "\t\t0. De quay lai." << endl;
         cout << "--------------------------------------MOI BAN CHON--------------------------------------" << endl;
         cin >> m7;
     } while (m7 < 1 || m7 > 4);
@@ -105,10 +132,13 @@ void CASE7() {
     menu7(nMenu7);
     switch (nMenu7) {
         case 1: {
+            DocDuLieu(a, n);
             ThemSach(a, n);
+            GhiDuLieu(a, n);
             break;
         }
         case 2: {
+            DocDuLieu(a, n);
             InToanBoSach(a, n);
             char ms[8];
             cout << "Nhap Vao Ma So Sach Can Xem Thong Tin \n ";
@@ -121,6 +151,7 @@ void CASE7() {
             break;
         }
         case 4: {
+            DocDuLieu(a, n);
             TimSachTheLoai(a, n);
             break;
         }

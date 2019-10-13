@@ -27,6 +27,7 @@ CMakeFiles/SemesterExcercise.dir/Functions/Bai6.cpp.obj: ../include.h
 
 CMakeFiles/SemesterExcercise.dir/Functions/Bai7.cpp.obj: ../Functions/Bai7.cpp
 CMakeFiles/SemesterExcercise.dir/Functions/Bai7.cpp.obj: ../Functions/Bai7.h
+CMakeFiles/SemesterExcercise.dir/Functions/Bai7.cpp.obj: ../include.h
 
 CMakeFiles/SemesterExcercise.dir/Functions/Bai8.cpp.obj: ../Functions/Bai8.cpp
 CMakeFiles/SemesterExcercise.dir/Functions/Bai8.cpp.obj: ../Functions/Bai8.h

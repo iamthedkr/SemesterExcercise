@@ -30,11 +30,13 @@ int menu(int &m) {
 
 int main(int argc, char const *argv[]) {
     int nMenu(1);
-    while (true) {
+    bool T(true);
+    while (T) {
         menu(nMenu);
         switch (nMenu) {
             case 0: {
-                return 0;
+                T = false;
+                break;
             }
             case 1: {
                 CASE1();
@@ -61,7 +63,7 @@ int main(int argc, char const *argv[]) {
                 break;
             }
             case 7: {
-
+                CASE7();
                 break;
             }
             case 8: {
