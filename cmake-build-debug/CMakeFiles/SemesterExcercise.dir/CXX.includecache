@@ -51,6 +51,8 @@ iomanip
 -
 fstream
 -
+algorithm
+-
 stdlib.h
 -
 malloc.h
