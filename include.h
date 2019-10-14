@@ -10,6 +10,7 @@
 #include <vector>
 #include <iomanip>
 #include <fstream>
+#include <algorithm>
 // Windows Header Files:
 
 

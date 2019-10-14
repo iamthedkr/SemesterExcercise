@@ -40,12 +40,15 @@ int Tim_MSSach(ListSach a, int n, char c[8]) {
 
 void InToanBoSach(ListSach a, int n) {
     cout << "\n \n                 DANH SACH CAC DAU SACH CO TRONG THU VIEN ";
-    cout << "\n  -----------------------------------------------------------------------------";
-    cout << "\n  Ma Sach                          Ten Sach                            The Loai";
-    cout << "\n  -----------------------------------------------------------------------------";
-    for (int i = 1; i <= n; i++)
-        cout << "\n     " << a[i].ID << setw(32 - strlen(a[i].ID) + 1) << " " << a[i].Name
-             << setw(33 - strlen(a[i].Name) + 1) << " " << a[i].Title << setw(13 - strlen(a[i].Title) + 1);
+    cout << "\n  ---------------------------------------------------------------------------------------------";
+    cout << "\n  |       Ma Sach      |            Ten Sach            |       The Loai       |    Tac gia   |";
+    cout << "\n  ---------------------------------------------------------------------------------------------";
+    for (int i = 1; i <= n; i++) {
+        cout << "\n\t     " << a[i].ID << setw(25 - strlen(a[i].ID) + 1);
+        cout << " " << a[i].Name << setw(25 - strlen(a[i].Name) + 1);
+        cout << " " << a[i].Title << setw(17 - strlen(a[i].Title) + 1);
+        cout << " " << a[i].Author;
+    }
     cout << "\n  -----------------------------------------------------------------------------\n";
 }
 
@@ -113,6 +116,19 @@ void DocDuLieu(ListSach &a, int &n) {
     }
 }
 
+/*
+int compareTitle(ListSach a, int n) {
+    for (int i = 1; i <= n; ++i) {
+        if (strcmp(a->Title, (a + i)->Title) > 0)
+            return 1;
+    }
+}
+*/
+void sortTitle(ListSach a, int n) {
+    sort(a->Title, (a + n)->Title);
+    InToanBoSach(a, n);
+}
+
 int menu7(int &m7) {
     do {
         cout << "\t\t1. Nhap sach." << endl;
@@ -147,7 +163,8 @@ void CASE7() {
             break;
         }
         case 3: {
-
+            DocDuLieu(a, n);
+            sortTitle(a, n);
             break;
         }
         case 4: {

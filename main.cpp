@@ -29,55 +29,60 @@ int menu(int &m) {
 }
 
 int main(int argc, char const *argv[]) {
-    int nMenu(1);
-    bool T(true);
-    while (T) {
-        menu(nMenu);
-        switch (nMenu) {
-            case 0: {
-                T = false;
-                break;
-            }
-            case 1: {
-                CASE1();
-                break;
-            }
-            case 2: {
-                CASE2();
-                break;
-            }
-            case 3: {
-                CASE3();
-                break;
-            }
-            case 4: {
-                CASE4();
-                break;
-            }
-            case 5: {
-                CASE5();
-                break;
-            }
-            case 6: {
-                CASE6();
-                break;
-            }
-            case 7: {
-                CASE7();
-                break;
-            }
-            case 8: {
-
-                break;
-            }
-            case 9: {
-
-                break;
-            }
-            default: {
-                cout << "\t\tKHONG CO TRONG MENU, YEU CAU NHAP LAI!!!" << endl;
-                cout << "\t\t****************************************" << endl;
-            }
-        }
+    int nMenu(0);
+    LABEL1:
+    menu(nMenu);
+    switch (nMenu) {
+        case 0:
+            goto LABEL2;
+        case 1:
+            CASE1();
+            goto LABEL2;
+        case 2:
+            CASE2();
+            goto LABEL2;
+        case 3:
+            CASE3();
+            goto LABEL2;
+        case 4:
+            CASE4();
+            goto LABEL2;
+        case 5:
+            CASE5();
+            goto LABEL2;
+        case 6:
+            CASE6();
+            goto LABEL2;
+        case 7:
+            CASE7();
+            goto LABEL2;
+        case 8:
+            goto LABEL2;
+        case 9:
+            goto LABEL2;
+        default:
+            goto LABEL2;
+    }
+    LABEL2:
+    char choice;
+    cout << "\n----------------------------------------------------------\n";
+    cout << "Do you want to continue ?\n";
+    cout << "- Yes, I do. (press y, Y)\n";
+    cout << "- No, I dont. (press n, N)\n";
+    cout << "\n----------------------------------------------------------\n";
+    cout << "Your choice: ";
+    choice = getchar();
+    while (choice == '\n') {
+        choice = getchar();
+    }
+    switch (choice) {
+        case 'y':
+        case 'Y':
+            goto LABEL1;
+        case 'n':
+        case 'N':
+            return 0;
+        default:
+            goto LABEL2;
     }
 }
