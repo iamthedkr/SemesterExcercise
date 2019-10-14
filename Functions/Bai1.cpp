@@ -31,10 +31,10 @@ void SONGUYEN::chuyenDoiCoSo(int N, int b) {
 bool SONGUYEN::laSoNnguyenTo(long long N) {
     for (int i = 2; i <= sqrt(N); i++) {
         if (N % i == 0) {
-            return 0;
+            return false;
         }
     }
-    return 1;
+    return true;
 }
 
 void SONGUYEN::phanTichThuaSoNguyenTo(int N) {
@@ -131,7 +131,7 @@ const int base_digits = 9;
 
 struct bigint {
     vector<int> a;
-    int sign;
+    int sign{};
 
     bigint() :
             sign(1) {
@@ -482,34 +482,37 @@ struct bigint {
 };
 
 int menu1(int &m1) {
-    do {
-        cout << "\t\t1. Bieu dien N o he co so b." << endl;
-        cout << "\t\t2. Phan tich N thanh tich cac thua so nguyen to." << endl;
-        cout << "\t\t3. Duyet cac so nguyen to co N chu so." << endl;
-        cout << "\t\t4. Duyet cac cap so huu nghi a, b nho hon N." << endl;
-        cout << "\t\t5. Duyet cac cap so P, 4P+1 la so nguyen to nho hon N." << endl;
-        cout << "\t\t6. Duyet cac so nguyen to nho hon N co tong cac chu so la S." << endl;
-        cout << "\t\t7. Duyet cac so thuan nghich co N chu so, co tong cac chu so la S." << endl;
-        cout
-                << "\t\t8. Duyet cac so thuan nghich co N chu so sao cho bieu dien so do o he co so b cung la so thuan nghich."
-                << endl;
-        cout << "\t\t9. Xay dung phep cong, tru, nhan, chia giua hai so lon (512 chu so)." << endl;
-        cout << "\t\t10. Tim so nguyen to lon (512 chu so)." << endl;
-        cout
-                << "\t\t11 Dua ra 5 thuat toan tim so nguyen to khac nhau, so sanh do phuc tap tinh toan cua cac thuat toan."
-                << endl;
-        cout << "\t\t0. De quay lai." << endl;
-        cout << "\t\t--------------------------------------MOI BAN CHON--------------------------------------" << endl;
-        cin >> m1;
-    } while (m1 < 1 || m1 > 11);
+    //do {
+    cout << "\t\t1. Bieu dien N o he co so b." << endl;
+    cout << "\t\t2. Phan tich N thanh tich cac thua so nguyen to." << endl;
+    cout << "\t\t3. Duyet cac so nguyen to co N chu so." << endl;
+    cout << "\t\t4. Duyet cac cap so huu nghi a, b nho hon N." << endl;
+    cout << "\t\t5. Duyet cac cap so P, 4P+1 la so nguyen to nho hon N." << endl;
+    cout << "\t\t6. Duyet cac so nguyen to nho hon N co tong cac chu so la S." << endl;
+    cout << "\t\t7. Duyet cac so thuan nghich co N chu so, co tong cac chu so la S." << endl;
+    cout
+            << "\t\t8. Duyet cac so thuan nghich co N chu so sao cho bieu dien so do o he co so b cung la so thuan nghich."
+            << endl;
+    cout << "\t\t9. Xay dung phep cong, tru, nhan, chia giua hai so lon (512 chu so)." << endl;
+    cout << "\t\t10. Tim so nguyen to lon (512 chu so)." << endl;
+    cout
+            << "\t\t11 Dua ra 5 thuat toan tim so nguyen to khac nhau, so sanh do phuc tap tinh toan cua cac thuat toan."
+            << endl;
+    cout << "\t\t0. De quay lai." << endl;
+    cout << "\t\t--------------------------------------MOI BAN CHON--------------------------------------" << endl;
+    cin >> m1;
+    //} while (m1 < 1 || m1 > 11);
     return m1;
 }
 
 void CASE1() {
-    int nMenu1, nInput(0);
+    int nMenu1;
+    long long nInput(0);
     SONGUYEN A;
     menu1(nMenu1);
     switch (nMenu1) {
+        case 0:
+            break;
         case 1: {
             int b(0);
             A.chuyenDoiCoSo(nInput, b);
@@ -611,9 +614,8 @@ void CASE1() {
             break;
         }
         default: {
-            cout << "\t\tKHONG CO TRONG MENU, YEU CAU NHAP LAI!!!" << endl;
-            cout << "\t\t****************************************" << endl;
-            menu1(nMenu1);
+            cout << "\t\tKHONG CO TRONG MENU!!!" << endl;
+            //menu1(nMenu1);
             break;
         }
     }

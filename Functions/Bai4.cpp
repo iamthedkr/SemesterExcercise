@@ -93,8 +93,8 @@ SquareMatrix SquareMatrix::transposed() const {
     return t;
 }
 
-int SquareMatrix::toUpperTriangle(double **v = NULL) {
-    int j, rank = size;
+int SquareMatrix::toUpperTriangle(double **v = nullptr) {
+    int j = 0, rank = size;
 
     for (int i = 0; i < rank; i++) {
 
@@ -131,7 +131,7 @@ int SquareMatrix::toUpperTriangle(double **v = NULL) {
     return rank;
 }
 
-bool SquareMatrix::eliminate(double **v = NULL) {
+bool SquareMatrix::eliminate(double **v = nullptr) {
     int rank = toUpperTriangle(v);
     if (rank < size) return false;
     for (int i = size - 1; i >= 0; i--) {
@@ -152,7 +152,6 @@ bool SquareMatrix::eliminate(double **v = NULL) {
     }
     return true;
 }
-
 
 int SquareMatrix::rank() const {
     SquareMatrix tmp(*this);
@@ -185,7 +184,7 @@ SquareMatrix SquareMatrix::reverse() const {
 
 bool SquareMatrix::solve(const double *right, double *result) const {
     double detA = det();
-    if (detA == 0) return 0;
+    if (detA == 0) return false;
     SquareMatrix rv = reverse();
     for (int i = 0; i < size; i++) {
         result[i] = 0;
@@ -193,7 +192,7 @@ bool SquareMatrix::solve(const double *right, double *result) const {
             result[i] += rv.matrix[i][j] * right[j];
         }
     }
-    return 1;
+    return true;
 }
 
 ostream &operator<<(ostream &out, const SquareMatrix &m) {
@@ -242,20 +241,20 @@ void tich(int a[MAX][MAX], int b[MAX][MAX], int t[MAX][MAX], int da, int ca, int
 }
 
 int menu4(int &m4) {
-    do {
-        cout << "\t\t1. Tao lap ma tran." << endl;
-        cout << "\t\t2. Nhan hai ma tran." << endl;
-        cout << "\t\t3. Tim phan tu lon nhat cua ma tran." << endl;
-        cout << "\t\t4. Tim hang cua ma tran." << endl;
-        cout << "\t\t5. Tim cac vecto rieng va gia tri rieng." << endl;
-        cout << "\t\t6. Tim chuyen vi cua ma tran." << endl;
-        cout << "\t\t7. Tim dinh thuc cua ma tran." << endl;
-        cout << "\t\t8. Tim nghich dao cua ma tran." << endl;
-        cout << "\t\t9. Giai he phuong trinh tuyen tinh thuan nhat AX = B." << endl;
-        cout << "\t\t0. De quay lai." << endl;
-        cout << "--------------------------------------MOI BAN CHON--------------------------------------" << endl;
-        cin >> m4;
-    } while (m4 < 1 || m4 > 9);
+    //do {
+    cout << "\t\t1. Tao lap ma tran." << endl;
+    cout << "\t\t2. Nhan hai ma tran." << endl;
+    cout << "\t\t3. Tim phan tu lon nhat cua ma tran." << endl;
+    cout << "\t\t4. Tim hang cua ma tran." << endl;
+    cout << "\t\t5. Tim cac vecto rieng va gia tri rieng." << endl;
+    cout << "\t\t6. Tim chuyen vi cua ma tran." << endl;
+    cout << "\t\t7. Tim dinh thuc cua ma tran." << endl;
+    cout << "\t\t8. Tim nghich dao cua ma tran." << endl;
+    cout << "\t\t9. Giai he phuong trinh tuyen tinh thuan nhat AX = B." << endl;
+    cout << "\t\t0. De quay lai." << endl;
+    cout << "--------------------------------------MOI BAN CHON--------------------------------------" << endl;
+    cin >> m4;
+    //} while (m4 < 1 || m4 > 9);
     return m4;
 }
 
@@ -272,9 +271,8 @@ void CASE4() {
         file >> v[i];
 
     switch (nMenu4) {
-        //case 0: {
-        //    return 0;
-        //}
+        case 0:
+            break;
         case 1: {
             cout << "Ma tran A:\n" << A << endl;
             break;
@@ -358,7 +356,7 @@ void CASE4() {
                 cout << A[i][j] << char('a' + j) << " = " << v[i] << endl;
             }
 
-            double *x = new double[size];
+            auto *x = new double[size];
             if (!A.solve(v, x))
                 cout << "\nKhong giai duoc!";
             else {
@@ -370,9 +368,8 @@ void CASE4() {
         }
 
         default: {
-            cout << "\t\tKHONG CO TRONG MENU, YEU CAU NHAP LAI!!!" << endl;
-            cout << "\t\t****************************************" << endl;
-            menu4(nMenu4);
+            cout << "\t\tKHONG CO TRONG MENU!!!" << endl;
+            //menu4(nMenu4);
             break;
         }
     }

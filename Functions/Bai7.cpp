@@ -130,7 +130,7 @@ void sortTitle(ListSach a, int n) {
 }
 
 int menu7(int &m7) {
-    do {
+    //do {
         cout << "\t\t1. Nhap sach." << endl;
         cout << "\t\t2. Hien thi thong tin ve sach." << endl;
         cout << "\t\t3. Sap xep theo chu de sach." << endl;
@@ -138,7 +138,7 @@ int menu7(int &m7) {
         cout << "\t\t0. De quay lai." << endl;
         cout << "--------------------------------------MOI BAN CHON--------------------------------------" << endl;
         cin >> m7;
-    } while (m7 < 1 || m7 > 4);
+    //} while (m7 < 1 || m7 > 4);
     return m7;
 }
 
@@ -147,6 +147,8 @@ void CASE7() {
     ListSach a;
     menu7(nMenu7);
     switch (nMenu7) {
+        case 0:
+            break;
         case 1: {
             DocDuLieu(a, n);
             ThemSach(a, n);
@@ -174,8 +176,7 @@ void CASE7() {
         }
         default: {
             cout << "\t\tKHONG CO TRONG MENU, YEU CAU NHAP LAI!!!" << endl;
-            cout << "\t\t****************************************" << endl;
-            menu7(nMenu7);
+            //menu7(nMenu7);
             break;
         }
     }

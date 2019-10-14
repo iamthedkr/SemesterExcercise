@@ -78,17 +78,17 @@ void SOPHUC::outputComplex(Complex a) {
 }
 
 int menu6(int &m6) {
-    do {
-        cout << "\t\t1. Tao lap hai so phuc." << endl;
-        cout << "\t\t2. Cong hai so phuc." << endl;
-        cout << "\t\t3. Nhan hai so phuc." << endl;
-        cout << "\t\t4. Chia hai so phuc." << endl;
-        cout << "\t\t5. Luy thua so phuc." << endl;
-        cout << "\t\t6. Can bac hai cua so phuc." << endl;
-        cout << "\t\t0. De quay lai." << endl;
-        cout << "\t\t------------------MOI BAN CHON------------------" << endl;
-        cin >> m6;
-    } while (m6 < 1 || m6 > 6);
+    //do {
+    cout << "\t\t1. Tao lap hai so phuc." << endl;
+    cout << "\t\t2. Cong hai so phuc." << endl;
+    cout << "\t\t3. Nhan hai so phuc." << endl;
+    cout << "\t\t4. Chia hai so phuc." << endl;
+    cout << "\t\t5. Luy thua so phuc." << endl;
+    cout << "\t\t6. Can bac hai cua so phuc." << endl;
+    cout << "\t\t0. De quay lai." << endl;
+    cout << "\t\t------------------MOI BAN CHON------------------" << endl;
+    cin >> m6;
+    //} while (m6 < 1 || m6 > 6);
     return m6;
 }
 
@@ -98,6 +98,8 @@ void CASE6() {
     Complex a = Complex(), b = Complex();
     SOPHUC Comp;
     switch (nMenu6) {
+        case 0:
+            break;
         case 1: {
             Comp.inputComplex(a, b);
             cout << "So phuc a va b la: " << endl;
@@ -108,7 +110,7 @@ void CASE6() {
         }
         case 2: {
             Comp.inputComplex(a, b);
-            cout << "Ban muon tinh tong hay hieu?   1:Tong , 0:Hieu" << endl;
+            cout << "Ban muon tinh tong hay hieu?   1:Tong , 2:Hieu" << endl;
             int tongHieu;
             cin >> tongHieu;
             switch (tongHieu) {
@@ -123,9 +125,7 @@ void CASE6() {
                     break;
                 }
             }
-
-
-            break;
+            //break;
         }
         case 3: {
             Comp.inputComplex(a, b);
@@ -153,8 +153,7 @@ void CASE6() {
         }
         default: {
             cout << "\t\tKHONG CO TRONG MENU, YEU CAU NHAP LAI!!!" << endl;
-            cout << "\t\t****************************************" << endl;
-            menu6(nMenu6);
+            //menu6(nMenu6);
             break;
         }
     }

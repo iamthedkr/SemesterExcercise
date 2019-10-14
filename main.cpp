@@ -11,7 +11,7 @@
 using namespace std;
 
 int menu(int &m) {
-    do {
+    //do {
         cout << "\t\t1. Thao tac voi so nguyen." << endl;
         cout << "\t\t2. Thao tac voi xau ky tu." << endl;
         cout << "\t\t3. Thao tac voi da thuc." << endl;
@@ -22,9 +22,9 @@ int menu(int &m) {
         cout << "\t\t8. Thao tac tren FILE." << endl;
         cout << "\t\t9. Thao tac voi tap hop." << endl;
         cout << "\t\t0. De thoat." << endl;
-        cout << "\t\t-------------MOI BAN CHON-------------" << endl;
+    cout << "\t\t--------------MOI BAN CHON--------------" << endl;
         cin >> m;
-    } while (m < 1 || m > 9);
+    //} while (m < 1 || m > 9);
     return m;
 }
 
@@ -34,7 +34,7 @@ int main(int argc, char const *argv[]) {
     menu(nMenu);
     switch (nMenu) {
         case 0:
-            goto LABEL2;
+            return 0;
         case 1:
             CASE1();
             goto LABEL2;
@@ -65,11 +65,11 @@ int main(int argc, char const *argv[]) {
     }
     LABEL2:
     char choice;
-    cout << "\n----------------------------------------------------------\n";
-    cout << "Do you want to continue ?\n";
-    cout << "- Yes, I do. (press y, Y)\n";
-    cout << "- No, I dont. (press n, N)\n";
-    cout << "\n----------------------------------------------------------\n";
+    cout << "\t\t****************************************\n";
+    cout << "\t\tDo you want to continue ?" << endl;
+    cout << "\t\t\t- Yes, I do. (press y, Y)" << endl;
+    cout << "\t\t\t- No, I dont. (press n, N)" << endl;
+    cout << "\t\t****************************************" << endl;
     cout << "Your choice: ";
     choice = getchar();
     while (choice == '\n') {

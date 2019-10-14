@@ -211,19 +211,19 @@ ostream &operator<<(ostream &out, const DaThuc &d) {
 }
 
 int menu5(int &m5) {
-    do {
-        cout << "\t\t1. Tao lap hai da thuc Pn(X), Qm(X)." << endl;
-        cout << "\t\t2. Tim Pn(Xo), Qm(Xo)." << endl;
-        cout << "\t\t3. Tim dao ham cap L cua Pn(X), Qm(X)." << endl;
-        cout << "\t\t4. Tim R = P + Q." << endl;
-        cout << "\t\t5. Tim R = P - Q." << endl;
-        cout << "\t\t6. Tim R = P * Q." << endl;
-        cout << "\t\t7. Tim R = P / Q va da thuc du." << endl;
-        cout << "\t\t8. Xay dung cac thao tac cong, tru, nhan, chia hai so nguyen bang da thuc." << endl;
-        cout << "\t\t0. De quay lai." << endl;
-        cout << "--------------------------------------MOI BAN CHON--------------------------------------" << endl;
-        cin >> m5;
-    } while (m5 < 1 || m5 > 8);
+    //do {
+    cout << "\t\t1. Tao lap hai da thuc Pn(X), Qm(X)." << endl;
+    cout << "\t\t2. Tim Pn(Xo), Qm(Xo)." << endl;
+    cout << "\t\t3. Tim dao ham cap L cua Pn(X), Qm(X)." << endl;
+    cout << "\t\t4. Tim R = P + Q." << endl;
+    cout << "\t\t5. Tim R = P - Q." << endl;
+    cout << "\t\t6. Tim R = P * Q." << endl;
+    cout << "\t\t7. Tim R = P / Q va da thuc du." << endl;
+    cout << "\t\t8. Xay dung cac thao tac cong, tru, nhan, chia hai so nguyen bang da thuc." << endl;
+    cout << "\t\t0. De quay lai." << endl;
+    cout << "--------------------------------------MOI BAN CHON--------------------------------------" << endl;
+    cin >> m5;
+    //} while (m5 < 1 || m5 > 8);
     return m5;
 }
 
@@ -235,6 +235,8 @@ void CASE5() {
     DaThuc Q("5x^3+-2x^4+-4x^0");
 
     switch (nMenu5) {
+        case 0:
+            break;
         case 1: {
             cout << "P(x) = " << P << endl;
             cout << "Q(x) = " << Q << endl;
@@ -274,7 +276,6 @@ void CASE5() {
         }
         default: {
             cout << "\t\tKHONG CO TRONG MENU, YEU CAU NHAP LAI!!!" << endl;
-            cout << "\t\t****************************************" << endl;
             menu5(nMenu5);
             break;
         }

@@ -169,19 +169,19 @@ istream &operator>>(istream &pin, poly &p) {
 }
 
 int menu3(int &m3) {
-    do {
-        cout << "\t\t1. Tao lap hai da thuc Pn(X), Qm(X)." << endl;
-        cout << "\t\t2. Tim Pn(Xo), Qm(Xo)." << endl;
-        cout << "\t\t3. Tim dao ham cap L cua Pn(X), Qm(X)." << endl;
-        cout << "\t\t4. Tim R = P + Q." << endl;
-        cout << "\t\t5. Tim R = P - Q." << endl;
-        cout << "\t\t6. Tim R = P * Q." << endl;
-        cout << "\t\t7. Tim R = P / Q va da thuc du." << endl;
-        cout << "\t\t8. Xay dung cac thao tac cong, tru, nhan, chia hai so nguyen bang da thuc." << endl;
-        cout << "\t\t0. De quay lai." << endl;
-        cout << "--------------------------------------MOI BAN CHON--------------------------------------" << endl;
-        cin >> m3;
-    } while (m3 < 1 || m3 > 8);
+    //do {
+    cout << "\t\t1. Tao lap hai da thuc Pn(X), Qm(X)." << endl;
+    cout << "\t\t2. Tim Pn(Xo), Qm(Xo)." << endl;
+    cout << "\t\t3. Tim dao ham cap L cua Pn(X), Qm(X)." << endl;
+    cout << "\t\t4. Tim R = P + Q." << endl;
+    cout << "\t\t5. Tim R = P - Q." << endl;
+    cout << "\t\t6. Tim R = P * Q." << endl;
+    cout << "\t\t7. Tim R = P / Q va da thuc du." << endl;
+    cout << "\t\t8. Xay dung cac thao tac cong, tru, nhan, chia hai so nguyen bang da thuc." << endl;
+    cout << "\t\t0. De quay lai." << endl;
+    cout << "--------------------------------------MOI BAN CHON--------------------------------------" << endl;
+    cin >> m3;
+    //} while (m3 < 1 || m3 > 8);
     return m3;
 }
 
@@ -190,6 +190,8 @@ void CASE3() {
     menu3(nMenu3);
     poly P, Q;
     switch (nMenu3) {
+        case 0:
+            break;
         case 1: {
             cout << "Da thuc P(x):\n";
             cin >> P;
@@ -233,11 +235,9 @@ void CASE3() {
             break;
         }
         default: {
-            cout << "\t\tKHONG CO TRONG MENU, YEU CAU NHAP LAI!!!" << endl;
-            cout << "\t\t****************************************" << endl;
-            menu3(nMenu3);
+            cout << "\t\tKHONG CO TRONG MENU!!!" << endl;
+            //menu3(nMenu3);
             break;
         }
     }
-
 }
