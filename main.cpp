@@ -71,9 +71,9 @@ int main(int argc, char const *argv[]) {
     cout << "\t\t\t- No, I dont. (press n, N)" << endl;
     cout << "\t\t****************************************" << endl;
     cout << "Your choice: ";
-    choice = getchar();
+    cin >> choice;
     while (choice == '\n') {
-        choice = getchar();
+        cin >> choice;
     }
     switch (choice) {
         case 'y':

@@ -11,16 +11,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a369bb40-c995-4fe9-a5b4-1efd6205e596" name="Default Changelist" comment="Switch-case fixed, bug fixes.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="a369bb40-c995-4fe9-a5b4-1efd6205e596" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai1.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai2.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai2.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai3.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai4.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai4.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai5.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai5.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai6.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai6.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Functions/Bai7.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai7.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SemesterExcercise.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SemesterExcercise.dir/CXX.includecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
     </list>
@@ -41,7 +33,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Background" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -79,7 +71,8 @@
       <workItem from="1570986439359" duration="1664000" />
       <workItem from="1570988150477" duration="182000" />
       <workItem from="1571028599706" duration="4370000" />
-      <workItem from="1571065932531" duration="1445000" />
+      <workItem from="1571065932531" duration="2431000" />
+      <workItem from="1571137584141" duration="219000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed workspace.xml error.">
       <created>1570550906132</created>
@@ -130,7 +123,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571032972184</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Bug fixes.">
+      <created>1571067414880</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1571067414880</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,7 +157,8 @@
     <MESSAGE value="Working on function 7." />
     <MESSAGE value="Working on function 7, bug fixes." />
     <MESSAGE value="Switch-case fixed, bug fixes." />
-    <option name="LAST_COMMIT_MESSAGE" value="Switch-case fixed, bug fixes." />
+    <MESSAGE value="Bug fixes." />
+    <option name="LAST_COMMIT_MESSAGE" value="Bug fixes." />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
