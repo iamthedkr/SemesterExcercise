@@ -72,9 +72,38 @@
         - Lũy thừa số phức.
         - Căn bậc hai của số phức.
 
-### Xây dựng hệ quản lý sách bao gồm những thao tác sau:
+### VII. Xây dựng hệ quản lý sách bao gồm những thao tác sau:
+        
         - Nhập sách.
         - Hiển thị thông tin về sách.
         - Sắp xếp theo chủ đề sách.
         - Tìm kiếm theo chủ đề sách.
+        
+### VIII. Xây dựng tập thao tác trên FILE:
+        
+        - Đếm số dòng trong file.
+        - Đếm số từ trong file.
+        - Tìm tập từ và số lần xuất hiện mỗi từ trong Data1.in.
+        - Tìm tập từ và số lần xuất hiện mỗi từ trong Data1.in hoặc Data2.in.
+        - Tìm tập từ và số lần xuất hiện mỗi từ trong Data1.in và Data2.in.
+        - Tìm tập từ và số lần xuất hiện mỗi từ trong Data1.in nhưng không xuất hiện trong Data2.in.
+        - Mã hóa file bằng kỹ thuật chẵn lẻ.
+        - Giải mã file bằng ký thuật chẵn lẻ.
+        - Đổi tên file.
+        - Loại bỏ file.
+        
+### IX. Xây dựng tập thao tác với tập hợp.:
 
+        - Duyệt các xâu nhị phân có độ dài n.
+        - Duyêt các tập con K phân tử của 1, 2,..., n.
+        - Duyệt các hoán vị của 1, 2,..., n.
+        - Duyệt các chữ số N thành tổng các số tự nhiên nhỏ hơn N.
+        - Duyệt các xâu nhị phân dộ dài N có đúng 1 dãy K số 0 và 1, dãy m M số 1 liên tiếp.
+        - Duyệt các dãy con K phần tử tăng dần tự nhiên của dãy số An.
+        - Duyệt dãy số gồm N phần tử có tổng số K phần tử bất kỳ là số nguyên tố.
+        - Giải bài toán N quân hậu.
+        - Giải bài toán mã đi tuần.
+        - Giải bài toán cái túi.
+        - Giải bài toán người du lịch.
+        - Giải bài toán cho thuê máy.
+        
