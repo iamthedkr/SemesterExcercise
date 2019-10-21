@@ -8,9 +8,9 @@
 
 class SONGUYEN {
 public:
-    static void chuyenDoiCoSo(int, int);
+    static void chuyenDoiCoSo(long long, int);
 
-    static void phanTichThuaSoNguyenTo(int);
+    static void phanTichThuaSoNguyenTo(long long);
 
     static bool laSoNnguyenTo(long long);
 

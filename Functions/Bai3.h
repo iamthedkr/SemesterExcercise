@@ -10,7 +10,7 @@ class poly {
     double *coef;
     int deg;
 public:
-    poly(int _deg = 0);
+    explicit poly(int _deg = 0);
 
     poly(const poly &);
 
@@ -58,7 +58,7 @@ public:
 
     friend istream &operator>>(istream &, poly &);
 
-    void set(int m, double v[]);
+    void set(int m, const double v[]);
 
 };
 

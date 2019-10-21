@@ -4,7 +4,7 @@
 
 #include "Bai3.h"
 
-void poly::set(int m, double v[]) {
+void poly::set(int m, const double v[]) {
     this->~poly();
     deg = m;
     coef = new double[deg + 1];

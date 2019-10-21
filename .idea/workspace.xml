@@ -11,9 +11,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a369bb40-c995-4fe9-a5b4-1efd6205e596" name="Default Changelist" comment="Update Rea">
+    <list default="true" id="a369bb40-c995-4fe9-a5b4-1efd6205e596" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai1.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai1.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai1.h" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai1.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai3.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai3.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Functions/Bai3.h" beforeDir="false" afterPath="$PROJECT_DIR$/Functions/Bai3.h" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -73,7 +76,8 @@
       <workItem from="1571065932531" duration="2431000" />
       <workItem from="1571137584141" duration="219000" />
       <workItem from="1571137823099" duration="183000" />
-      <workItem from="1571138023112" duration="682000" />
+      <workItem from="1571138023112" duration="729000" />
+      <workItem from="1571155715387" duration="448000" />
     </task>
     <task id="LOCAL-00001" summary="Fixed workspace.xml error.">
       <created>1570550906132</created>
@@ -138,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571138071642</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Update Readme.md">
+      <created>1571138726385</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1571138726385</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +169,8 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Fixed workspace.xml error." />
     <MESSAGE value="Function 6 done, function 1 now OOP, bug fixes." />
     <MESSAGE value="Function 6 now OOP, bug fixes." />
@@ -167,9 +180,7 @@
     <MESSAGE value="Switch-case fixed, bug fixes." />
     <MESSAGE value="Bug fixes." />
     <MESSAGE value="Update gitignore." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update gitignore." />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Update Readme.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Readme.md" />
   </component>
 </project>

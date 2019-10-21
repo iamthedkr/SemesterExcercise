@@ -4,7 +4,7 @@
 #include "Bai1.h"
 
 //Issue 1
-void SONGUYEN::chuyenDoiCoSo(int N, int b) {
+void SONGUYEN::chuyenDoiCoSo(long long N, int b) {
     const char x[] = {
             '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H',
             'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'X', 'Y', 'Z', 'W'
@@ -37,7 +37,7 @@ bool SONGUYEN::laSoNnguyenTo(long long N) {
     return true;
 }
 
-void SONGUYEN::phanTichThuaSoNguyenTo(int N) {
+void SONGUYEN::phanTichThuaSoNguyenTo(long long N) {
     cout << "Nhap n = ";
     cin >> N;
     int dem;
